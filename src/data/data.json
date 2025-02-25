@@ -1,0 +1,22 @@
+[
+    {
+        "img":"../public/img/pago-de-servicios.jpg",
+        "title":"Pagá tus servicios",
+        "description":"Simplifica tus pagos a través de nuestra plataforma de manera rápida y segura, sin salir de casa"
+    },
+    {
+        "img":"../public/img/transferencia.avif",
+        "title":"Transferí las 24hs",
+        "description":"Con nuestro servicio de transferencias 24/7, puedes enviar y recibir dinero en cualquier momento, sin importar la hora."
+    },
+    {
+        "img":"../public/img/recarga.jpg",
+        "title":"Recargá saldo",
+        "description":"Olvidate de las filas y los trámites complicados, y realiza tus recargas desde la comodidad de tu hogar o mientras estás en movimiento."
+    },
+    {
+        "img":"../public/img/pago-qr.png",
+        "title":"Pagá con QR",
+        "description":"Simplifica tus pagos con un solo escaneo"
+    }
+]

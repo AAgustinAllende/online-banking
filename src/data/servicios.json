@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "nombre": "Claro",
+        "categoria": "Telefonía",
+        "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Claro.svg/1741px-Claro.svg.png",
+        "monto_maximo": 5000
+    },
+    {
+        "id": 2,
+        "nombre": "Personal",
+        "categoria": "Telefonía",
+        "img":"https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/102013/personal-logo.png?itok=aynbnAK3",
+        "monto_maximo": 10000
+    },
+    {
+        "id": 3,
+        "nombre": "Movistar",
+        "categoria": "Telefonía",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoXb2Dk6T5_HmiG1M4zEnS1CO0EJJ35YrrOQ&s",
+        "monto_maximo": 8000
+    },
+    {
+        "id": 4,
+        "nombre": "EPEC",
+        "categoria": "Energía",
+        "img":"https://cdn6.aptoide.com/imgs/9/5/8/95881656670df0834f47d5643d47da1f_icon.png",
+        "monto_maximo": 25000
+    },
+    {
+        "id": 5,
+        "nombre": "Ecogas",
+        "categoria": "Energia",
+        "img":"https://cybersecurityhub.cordoba.gob.ar/wp-content/uploads/2022/06/Ecogas.png",
+        "monto_maximo": 15000
+    },
+    {
+        "id": 6,
+        "nombre": "Aguas Cordobesas",
+        "categoria": "Agua",
+        "img":"https://play-lh.googleusercontent.com/PVJTlBH1e-SdcdbEDKKV55QzfGCxf2gGNIoHj5qcxYw4UQ6WdvtbLc0mNix6ZO2m0sg",
+        "monto_maximo": 5000
+    },
+    {
+        "id": 7,
+        "nombre": "Cablevisión Flow",
+        "categoria": "Televisión",
+        "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cablevisi%C3%B3n_Flow.jpg/640px-Cablevisi%C3%B3n_Flow.jpg",
+        "monto_maximo": 12000
+    },
+    {
+        "id": 8,
+        "nombre": "DirecTV",
+        "categoria": "Televisión",
+        "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Directv_LA_logo.svg/1200px-Directv_LA_logo.svg.png",
+        "monto_maximo": 70000
+    },
+    {
+        "id": 9,
+        "nombre": "Netflix",
+        "categoria": "Streaming",
+        "img":"https://cdn3d.iconscout.com/3d/free/thumb/free-netflix-2950136-2447898.png?f=webp",
+        "monto_maximo": 3500
+    },
+    {
+        "id": 10,
+        "nombre": "Spotify",
+        "categoria": "Streaming",
+        "img":"https://static.vecteezy.com/system/resources/previews/042/148/631/non_2x/spotify-logo-spotify-social-media-icon-free-png.png",
+        "monto_maximo": 1800
+    },
+    {
+        "id": 11,
+        "nombre": "ARCA Monotributo",
+        "categoria": "Impuestos",
+        "img":"https://pbs.twimg.com/media/GbKRfIDW4AAwbsa.jpg",
+        "monto_maximo": 17000
+    },
+    {
+        "id": 12,
+        "nombre": "Rentas Córdoba",
+        "categoria": "Impuestos",
+        "img":"https://api.pagos360.com/resource/0E56AB8A/logo/logo.png",
+        "monto_maximo": 10000
+    },
+    {
+        "id": 13,
+        "nombre": "Telecentro",
+        "categoria": "Internet",
+        "img":"https://ayuda.telecentro.com.ar/wp-content/uploads/2018/04/cropped-logo-pua-transparente-1.png",
+        "monto_maximo": 12700
+    },
+    {
+        "id": 14,
+        "nombre": "Fibertel",
+        "categoria": "Internet",
+        "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Fibertel.svg/1200px-Fibertel.svg.png",
+        "monto_maximo": 20000
+    }
+]
