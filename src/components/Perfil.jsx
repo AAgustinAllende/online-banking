@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
-import Gastos from './Gastos'
+import Gastos from './Gastos';
 import Movimientos from './Movimientos';
 
 const Perfil = ({ user, setUser, saldoDisponible, setSaldoDisponible, movimientos, setMovimientos }) => {
@@ -12,16 +12,30 @@ const Perfil = ({ user, setUser, saldoDisponible, setSaldoDisponible, movimiento
         if (saldoGuardado !== null && saldoGuardado !== "NaN") {
             setSaldoDisponible(parseFloat(saldoGuardado));
         } else {
-            let saldoIngresado = prompt("Ingrese el dinero disponible en su cuenta");
-            if (saldoIngresado !== null && saldoIngresado.trim() !== "" && !isNaN(saldoIngresado)) {
-                saldoIngresado = parseFloat(saldoIngresado);
+            pedirSaldo();
+        }
+    }, []);
+
+    const pedirSaldo = () => {
+        const confirmacion = window.confirm("¿Querés ingresar tu saldo inicial?");
+        if (confirmacion) {
+            const inputSaldo = window.prompt("Ingrese el dinero disponible en su cuenta");
+            if (inputSaldo !== null && inputSaldo.trim() !== "" && !isNaN(inputSaldo)) {
+                const saldoIngresado = parseFloat(inputSaldo);
                 setSaldoDisponible(saldoIngresado);
                 localStorage.setItem('saldoDisponible', saldoIngresado);
             } else {
                 setSaldoDisponible(0);
+                localStorage.setItem('saldoDisponible', 0);
             }
         }
-    }, []);
+    };
+
+    const resetearSaldo = () => {
+        localStorage.removeItem('saldoDisponible');
+        setSaldoDisponible(0);
+        pedirSaldo();
+    };
 
     return (
         <div>
@@ -37,12 +51,14 @@ const Perfil = ({ user, setUser, saldoDisponible, setSaldoDisponible, movimiento
                     />
                 </div>
 
+                <button onClick={resetearSaldo} className="btn-reset">Resetear Saldo</button>
+
                 <div className="btn-home-banking">
                     <Link to="/transferencias">
-                    <button className="btn1">
-                      <img src="./img/transferencia-movil.png" alt="Transferencia"/>Transferir
-                      </button>
-                      </Link>
+                        <button className="btn1">
+                            <img src="./img/transferencia-movil.png" alt="Transferencia"/>Transferir
+                        </button>
+                    </Link>
                     <button className="btn2"><img src="./img/ingreso.png" alt="Ingresar"/>Ingresar</button>
                     <button className="btn3"><img src="./img/tomar-prestado.png" alt="Préstamos"/>Préstamos</button>
                     <button className="btn4"><img src="./img/ganador.png" alt="Inversiones"/>Inversiones</button>
@@ -61,13 +77,10 @@ const Perfil = ({ user, setUser, saldoDisponible, setSaldoDisponible, movimiento
                     </Link>
                 </section>
 
-                
             </main>
             <Gastos movimientos={movimientos}/>
             <Movimientos movimientos={movimientos} setMovimientos={setMovimientos}/>
-            
         </div>
-        
     );
 };
 
