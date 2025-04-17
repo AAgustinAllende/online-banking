@@ -30,7 +30,7 @@ const Form = ({setUser}) => {
                 <h2>Iniciar sesión</h2>
 
                 <div className="input-contenedor">
-                  <img className="icon" src="../public/img/correo-electronico.png" alt="Icono correo" />
+                  <img className="icon" src="/img/correo-electronico.png" alt="Icono correo" />
                   <input type="text" required 
                   value={nombre} 
                   onChange={e => setNombre(e.target.value)} />
@@ -38,7 +38,7 @@ const Form = ({setUser}) => {
                 </div>
 
                 <div className="input-contenedor">
-                  <img className="icon" src="../public/img/cerrar-con-llave.png" alt="Icono llave" />
+                  <img className="icon" src="/img/cerrar-con-llave.png" alt="Icono llave" />
                   <input type="password" required
                   value={contraseña}
                   onChange={e=>setContraseña(e.target.value)} />
